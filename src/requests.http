@@ -1,0 +1,29 @@
+###
+POST http://localhost:1992/api/instruments
+Content-Type: application/json
+
+{
+        "name": "banane",
+        "poids": 1,
+        "couleur":"jaune",
+        "prix": 6
+}
+
+###
+GET http://localhost:1992/api/instruments/2
+
+###
+PUT http://localhost:1992/api/instruments/2
+Content-Type: application/json
+
+{
+        "name": "banane",
+        "poids": 2,
+        "couleur":"verte",
+        "prix": 9
+}
+
+###
+DELETE http://localhost:1992/api/instruments
+
+
