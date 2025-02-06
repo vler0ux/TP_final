@@ -13,17 +13,45 @@ Content-Type: application/json
 GET http://localhost:1992/api/instruments/2
 
 ###
-PUT http://localhost:1992/api/instruments/2
+PUT http://localhost:1992/api/instruments/3
 Content-Type: application/json
 
 {
-        "name": "banane",
-        "poids": 2,
-        "couleur":"verte",
-        "prix": 9
+        "name": "cerise",
+        "poids": 0.1,
+        "couleur":"rose",
+        "prix": 1
 }
 
 ###
-DELETE http://localhost:1992/api/instruments
+DELETE http://localhost:1992/api/instruments/3
+
+
+
+
+# CREATION DE REQUETE POUR USERS 
+###
+POST http://localhost:1992/api/users
+Content-Type: application/json
+
+{
+        "pseudo": "toto",
+        "motdpasse": "Azerty1" 
+}
+
+###
+GET http://localhost:1992/api/users
+
+###
+PUT http://localhost:1992/api/users
+Content-Type: application/json
+
+{
+        
+}
+
+###
+DELETE http://localhost:1992/api/users
+
 
 
