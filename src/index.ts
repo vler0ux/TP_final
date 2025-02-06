@@ -4,6 +4,7 @@ import express from "express";
 
 import { instrumentRouter } from "./router/instruments";
 import { userRouter } from "./router/users";
+import { reparationRouter } from "./router/reparations";
 
 
 const app = express();
@@ -13,6 +14,7 @@ app.use(express.json());
 const apiRouter = express.Router();
 apiRouter.use("/instruments", instrumentRouter)
 apiRouter.use("/users", userRouter)
+apiRouter.use("/reparations", reparationRouter)
 
 
 app.use("/api", apiRouter);

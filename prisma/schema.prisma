@@ -23,4 +23,13 @@ model Instrument {
   poids    Float?
   prix     Float?
   couleur   String ?
+  Reparation Reparation[]
+}
+
+model Reparation {
+  id  Int @id @default(autoincrement())
+  name String
+  prix  Float
+  instrumentId  Int?
+  instrument Instrument?  @relation(fields: [instrumentId], references: [id])
 }

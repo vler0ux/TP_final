@@ -40,6 +40,16 @@ Content-Type: application/json
 }
 
 ###
+POST http://localhost:1992/api/users/local
+Content-Type: application/json
+
+{
+        "pseudo": "toto",
+        "motdpasse": "Azerty1" 
+}
+
+
+###
 GET http://localhost:1992/api/users
 
 ###
@@ -47,11 +57,27 @@ PUT http://localhost:1992/api/users
 Content-Type: application/json
 
 {
-        
+        "pseudo": "toto",
+        "motdpasse": "Azerty1" 
 }
 
 ###
 DELETE http://localhost:1992/api/users
 
+
+# CREATION DE REQUETE POUR REPARATION
+###
+POST http://localhost:1992/api/reparations
+Content-Type: application/json
+
+{
+        "name": "soudure",
+        "prix": 10
+}
+
+
+
+###
+DELETE http://localhost:1992/api/reparations
 
 
